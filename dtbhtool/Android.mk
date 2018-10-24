@@ -4,6 +4,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := dtbimg.c
 LOCAL_STATIC_LIBRARIES := libfdt
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/libfdt
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/libdtbimg
 LOCAL_MODULE := libdtbimg
 include $(BUILD_HOST_STATIC_LIBRARY)
@@ -67,3 +68,5 @@ LOCAL_MODULE := unpackdtbhimg
 include $(BUILD_HOST_EXECUTABLE)
 
 $(call dist-for-goals,dist_files,$(LOCAL_BUILT_MODULE))
+
+include $(LOCAL_PATH)/libfdt/Android.mk

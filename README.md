@@ -1,4 +1,4 @@
-# TWRP device tree for Samsung A5 2017 aka a5y17lte
+# TWRP device tree for Samsung S7 Flat aka herolte
 
 ## Kernel source available at 
-https://github.com/corsicanu/android_kernel_samsung_universal7880
+https://github.com/devkingsteam/android_kernel_samsung_universal8890
